@@ -11,7 +11,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.app.myweather.R;
 import com.app.myweather.model.City;
 import com.app.myweather.model.County;
@@ -113,7 +112,7 @@ public class ChooseAreaActivity extends Activity {
                 titleText.setText(selectedCity.getCityName());
                 currentLevel = LEVEL_COUNTY;
             }else{
-                queryFromServer(selectedCity.getCityCode(), "county");
+            queryFromServer(selectedCity.getCityCode(), "county");
             }
         }
 
